@@ -2,14 +2,34 @@ from test_framework import generic_test
 from test_framework.test_failure import TestFailure
 
 
+def push(s, item):
+    s.append(item)
+
+
+def pop(s):
+    return s.pop()
+
+
+def is_empty(s):
+    return len(s) == 0
+
+
 class Queue:
+    def __init__(self):
+        self.stack = []
+
     def enqueue(self, x: int) -> None:
-        # TODO - you fill in here.
-        return
+        push(self.stack, x)
 
     def dequeue(self) -> int:
-        # TODO - you fill in here.
-        return 0
+        s2 = []
+        # [1,2,3,4,5] -> [5,4,3,2,1]
+        while not is_empty(self.stack):
+            push(s2, pop(self.stack))
+        last = pop(s2)
+        while not is_empty(s2):
+            push(self.stack, pop(s2))
+        return last
 
 
 def queue_tester(ops):

@@ -676,7 +676,7 @@ problem_mapping = {
                 "total": 505
             },
             "Python: delete_from_list.py": {
-                "passed": 0,
+                "passed": 457,
                 "total": 457
             },
             "Python: insert_in_list.py": {
@@ -712,7 +712,7 @@ problem_mapping = {
                 "total": 210
             },
             "Python: reverse_sublist.py": {
-                "passed": 1,
+                "passed": 209,
                 "total": 210
             }
         },
@@ -726,7 +726,7 @@ problem_mapping = {
                 "total": 102
             },
             "Python: is_list_cyclic.py": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             }
         },
@@ -740,7 +740,7 @@ problem_mapping = {
                 "total": 106
             },
             "Python: do_terminated_lists_overlap.py": {
-                "passed": 0,
+                "passed": 9,
                 "total": 106
             }
         },
@@ -754,7 +754,7 @@ problem_mapping = {
                 "total": 120
             },
             "Python: do_lists_overlap.py": {
-                "passed": 0,
+                "passed": 1,
                 "total": 120
             }
         },
@@ -782,7 +782,7 @@ problem_mapping = {
                 "total": 306
             },
             "Python: delete_kth_last_from_list.py": {
-                "passed": 0,
+                "passed": 306,
                 "total": 306
             }
         },
@@ -796,7 +796,7 @@ problem_mapping = {
                 "total": 203
             },
             "Python: remove_duplicates_from_sorted_list.py": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             }
         },
@@ -810,7 +810,7 @@ problem_mapping = {
                 "total": 507
             },
             "Python: list_cyclic_right_shift.py": {
-                "passed": 0,
+                "passed": 2,
                 "total": 507
             }
         },
@@ -852,7 +852,7 @@ problem_mapping = {
                 "total": 208
             },
             "Python: pivot_list.py": {
-                "passed": 0,
+                "passed": 208,
                 "total": 208
             }
         },
@@ -896,7 +896,7 @@ problem_mapping = {
                 "total": 108
             },
             "Python: evaluate_rpn.py": {
-                "passed": 0,
+                "passed": 108,
                 "total": 108
             }
         },
@@ -910,7 +910,7 @@ problem_mapping = {
                 "total": 78
             },
             "Python: is_valid_parenthesization.py": {
-                "passed": 0,
+                "passed": 78,
                 "total": 78
             }
         },
@@ -924,7 +924,7 @@ problem_mapping = {
                 "total": 255
             },
             "Python: directory_path_normalization.py": {
-                "passed": 0,
+                "passed": 255,
                 "total": 255
             }
         },
@@ -952,7 +952,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Python: tree_level_order.py": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             }
         },
@@ -980,7 +980,7 @@ problem_mapping = {
                 "total": 65
             },
             "Python: queue_from_stacks.py": {
-                "passed": 0,
+                "passed": 65,
                 "total": 65
             }
         },
@@ -994,7 +994,7 @@ problem_mapping = {
                 "total": 201
             },
             "Python: queue_with_max.py": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             }
         }
@@ -1010,7 +1010,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Python: is_tree_balanced.py": {
-                "passed": 0,
+                "passed": 1,
                 "total": 3852
             }
         },

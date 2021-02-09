@@ -3,8 +3,17 @@ from test_framework import generic_test
 
 
 def is_balanced_binary_tree(tree: BinaryTreeNode) -> bool:
-    # TODO - you fill in here.
+  def get_height(root: BinaryTreeNode) -> int:
+    if not root:
+      return 0
+    return max(1 + get_height(root.left), 1 + get_height(root.right))
+
+  if not tree:
     return True
+
+  print(tree)
+
+  return abs(get_height(tree.left) - get_height(tree.right)) <= 1
 
 
 if __name__ == '__main__':

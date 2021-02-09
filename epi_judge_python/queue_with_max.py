@@ -3,17 +3,24 @@ from test_framework.test_failure import TestFailure
 
 
 class QueueWithMax:
+    def __init__(self):
+        self.queue = []
+        self.max_values = {}
+
     def enqueue(self, x: int) -> None:
-        # TODO - you fill in here.
-        return
+        self.queue.append(x)
+        self.max_value = max(self.max_value, x)
 
     def dequeue(self) -> int:
-        # TODO - you fill in here.
-        return 0
+        item = self.queue.pop(0)
+        if item == self.max_value:
+            self.max_value = float('-inf')
+            for v in self.queue:
+                self.max_value = max(self.max_value, v)
+        return item
 
     def max(self) -> int:
-        # TODO - you fill in here.
-        return 0
+        return self.max_value
 
 
 def queue_tester(ops):

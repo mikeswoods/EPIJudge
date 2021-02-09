@@ -7,8 +7,28 @@ from test_framework.test_utils import enable_executor_hook
 
 
 def overlapping_no_cycle_lists(l0: ListNode, l1: ListNode) -> ListNode:
-    # TODO - you fill in here.
-    return ListNode()
+    def length(L):
+        i = L
+        n = 0
+        while i:
+            n += 1
+            i = i.next
+        return n
+
+    l0_n = length(l0)
+    l1_n = length(l1)
+    diff = abs(l0_n - l1_n)
+    if diff is 0:
+        return None
+
+    # Find the longer list:
+    i, j = (l0, l1) if l0_n > l1_n else (l1, l0)
+    for _ in range(diff):
+        i = i.next
+    while i and j and i is not j:
+        i = i.next
+        j = j.next
+    return i
 
 
 @enable_executor_hook
