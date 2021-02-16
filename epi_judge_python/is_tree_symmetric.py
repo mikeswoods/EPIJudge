@@ -3,8 +3,16 @@ from test_framework import generic_test
 
 
 def is_symmetric(tree: BinaryTreeNode) -> bool:
-    # TODO - you fill in here.
+  def compare_trees(t1: BinaryTreeNode, t2: BinaryTreeNode) -> bool:
+    if not t1 and not t2:
+      return True
+    if t1 and t2:
+      return t1.data == t2.data and compare_trees(t1.left, t2.right) and compare_trees(t1.right, t2.left)
+    return False
+
+  if not tree:
     return True
+  return compare_trees(tree.left, tree.right)
 
 
 if __name__ == '__main__':

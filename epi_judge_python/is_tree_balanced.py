@@ -3,17 +3,25 @@ from test_framework import generic_test
 
 
 def is_balanced_binary_tree(tree: BinaryTreeNode) -> bool:
-  def get_height(root: BinaryTreeNode) -> int:
-    if not root:
-      return 0
-    return max(1 + get_height(root.left), 1 + get_height(root.right))
+  def traverse(tree: BinaryTreeNode, depth: int) -> bool:
+      if not tree:
+        return (True, depth)
 
-  if not tree:
-    return True
+      (left_balanced, left_height) = traverse(tree.left, depth + 1)
+      if not left_balanced:
+        return (False, None)
 
-  print(tree)
+      (right_balanced, right_height) = traverse(tree.right, depth + 1)
+      if not right_balanced:
+        return (False, None)
 
-  return abs(get_height(tree.left) - get_height(tree.right)) <= 1
+      balanced = abs(left_height - right_height) <= 1
+      height = max(left_height, right_height)
+
+      return (balanced, height)
+
+  (balanced, _) = traverse(tree, 0)
+  return balanced
 
 
 if __name__ == '__main__':
